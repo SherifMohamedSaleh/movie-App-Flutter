@@ -1,0 +1,24 @@
+class Student(val name: String, var age: Int, var grades: HashMap<String, Int>) {
+    fun studentName() {
+        println(name)
+    }
+    fun getTotalGrade() {
+       var sum: Int=0
+        for( key in grades.keys){
+           sum+=grades[key]!!
+            when{
+                sum > 75-> {println("first")}
+            }
+            else ->{
+                println("Second")
+            }
+            
+           
+       }
+    }
+
+}
+fun main(){
+    
+    println("welcom Sherif")
+}
